@@ -1,5 +1,9 @@
-package net.eggsbeni.mccourse;
+package net.eggsbeni.monophobia;
 
+import net.eggsbeni.monophobia.block.ModBlocks;
+import net.eggsbeni.monophobia.item.ModCreativeModeTabs;
+import net.eggsbeni.monophobia.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,6 +40,12 @@ public class MonophobiaMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -64,6 +74,10 @@ public class MonophobiaMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.OPAQUE_INGOT);
+            event.accept(ModItems.RAW_OPAQUE);
+        }
 
     }
 

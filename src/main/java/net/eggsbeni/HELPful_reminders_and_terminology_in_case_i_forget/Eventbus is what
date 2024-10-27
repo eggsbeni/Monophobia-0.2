@@ -1,0 +1,52 @@
+What is an EventBus?
+Imagine the EventBus as a central notification system. It lets code "subscribe" to specific events (like when a player joins the game, when an item is crafted, etc.),
+and when those events happen, the EventBus notifies any part of your mod that "subscribed" to it.
+IEventBus is a variation of this used to target mod specific content
+
+Key Parts of the EventBus
+
+Event Publisher:
+
+The EventBus publishes events for the mod. When something happens in the game that matches a subscribed event, it sends a "notification" to all registered listeners
+(methods waiting for that event).
+
+Event Listener:
+
+The listener is any part of your code that "listens" for an event. For example, you can have a method that listens for an event when a player picks up an item.
+When the player picks up an item, the EventBus notifies your method, and it can perform some custom action (like giving the player a special message or additional items).
+
+Event Registration:
+
+To tell the EventBus to notify me about certain events, I need to "register" for those events.
+This is where the register() method comes in (like in my code with register(eventBus)).
+By registering, I let the EventBus know that your items, blocks, or other components are ready to respond to game events.
+
+How It Works in The Mod:
+In your mod code, when you register items or tabs using eventBus.register(), you’re adding your custom items, tabs, etc., to the game.
+Once registered, they become part of Minecraft’s event system, so Minecraft "knows" about them and treats them as it would any native item or block.
+
+Quick rundown in the context of the code:
+
+By calling register(eventBus), my items or other mod elements are formally added to Minecraft’s internal systems.
+This allows them to be tracked, displayed, and interacted with in the game.
+When certain events happen (like the game loading your items), the EventBus ensures these items are correctly set up and functioning.
+
+Things that are done with it:
+
+Whenever I create new items, blocks, or entities, I’ll need to register them so Minecraft recognizes and loads them properly.
+I've seen this with ITEMS.register(eventBus);, which makes my custom items available in-game.
+
+I may want certain parts of my mod to react to specific events in Minecraft, like when a player logs in, an item is crafted, or an entity dies.
+Using the EventBus, I can create an event listener that activates your code when these actions occur.
+
+I may want certain parts of the mod to react to specific events in Minecraft, like when a player logs in, an item is crafted, or an entity dies.
+Using the EventBus, I can create an event listener that activates your code when these actions occur.
+
+I might want to trigger special effects or changes in the world when a player interacts with blocks or entities.
+ For example, spawning particles, causing explosions, or modifying blocks.
+
+ In general, I’ll use the EventBus whenever I need to:
+
+ Register mod content: items, blocks, entities, etc.
+ Listen for specific events: like crafting, player interaction, or world changes.
+ Trigger custom behaviors: respond to gameplay actions with custom effects or rewards.

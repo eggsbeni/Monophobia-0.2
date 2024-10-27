@@ -1,0 +1,14 @@
+{
+
+  "item.monophobia.opaque_ingot": "Opaque Ingot",
+  "item.monophobia.raw_opaque": "Raw Opaque",
+
+  "itemGroup.monophobia.monophobia_items_tab": "Monophobia Items",
+  "itemGroup.monophobia.monophobia_blocks_tab": "Monophobia Blocks",
+
+  "block.monophobia.opaque_block": "Block of Opaque",
+  "block.monophobia.opaque_ore": "Opaque Ore",
+  "block.monophobia.deepslate_opaque_ore": "Deepslate Opaque Ore",
+  "block.monophobia.raw_opaque_block": "Block of Raw Opaque"
+
+}

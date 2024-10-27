@@ -1,0 +1,18 @@
+using this file to explain some json files.
+
+The en_us.json file is meant to translate your mod variable names in intelliJ, into the displayed mod names in game.
+Using the example of Opaque Ingot:
+"item.monophobia.opaque_ingot": "Opaque Ingot"
+the item.monophobia is using the modname to clarify where the item is coming from
+the opaque_ingot is the name of the item
+the "Opaque Ingot" is the in game display name of the item
+
+The format of item json files in the item directory under models consists of the following:
+  "parent":"minecraft:item/generated",
+  "textures": {
+    "layer0": "monophobia:item/opaque_ingot"
+the "parent" is to describe how the model will be displayed with "minecraft:item/generated"
+indicating that its going to be displayed like a normal minecraft item while held in your hand (that sort of 2d/3d mix)
+the "textures": { defines the texture for the item
+and the "layer0": "monophobia:item/opaque_ingot" is the actual texture that is going to be defined, the png found in
+the textures directory, in this case under items.
