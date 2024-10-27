@@ -29,6 +29,9 @@ public class ModItems {
             // The third argument is an Item.Properties object, setting additional properties for this item.
             ITEMS.registerItem("raw_opaque", Item::new, new Item.Properties());
 
+    public static final DeferredItem<Item> VOLATILE_FRUIT =
+            ITEMS.registerItem("volatile_fruit", Item::new, new Item.Properties().food(ModFoodProperties.VOLATILE_FRUIT));
+
     // Declares a method named register, with a parameter named eventBus of type IEventBus.
     // This method registers all items in the ITEMS registry, linking them to Minecraft’s event system.
     public static void register(IEventBus eventBus) {
