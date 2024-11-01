@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opaque_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "monophobia:raw_opaque"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "monophobia:raw_opaque_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_opaque_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "monophobia:raw_opaque_block"
+    ]
+  }
+}

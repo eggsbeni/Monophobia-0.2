@@ -1,0 +1,4 @@
+// 1.21.1	2024-10-31T21:41:28.7219055	Tags for minecraft:block mod id monophobia
+b4d2ecc278e9191caf12eb0272c553f23343d00d data/minecraft/tags/block/mineable/pickaxe.json
+994fe4fca5c70aac918e6127db978effb25a52a6 data/minecraft/tags/block/needs_iron_tool.json
+64bb77b2c659cb6eee7420abefa8e743d64a9623 data/minecraft/tags/block/needs_stone_tool.json

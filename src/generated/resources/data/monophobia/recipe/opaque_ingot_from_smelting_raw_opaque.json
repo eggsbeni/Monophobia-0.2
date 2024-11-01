@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "opaque_ore",
+  "ingredient": {
+    "item": "monophobia:raw_opaque"
+  },
+  "result": {
+    "count": 1,
+    "id": "monophobia:opaque_ingot"
+  }
+}

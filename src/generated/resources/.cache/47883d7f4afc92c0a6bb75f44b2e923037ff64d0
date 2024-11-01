@@ -1,0 +1,13 @@
+// 1.21.1	2024-10-31T21:41:28.7213976	Block States: monophobia
+90d65278948d09cd3c4113219e28d67c308cba6c assets/monophobia/blockstates/deepslate_opaque_ore.json
+82ba4c969c5f945fc99d5027f324168ad1114c60 assets/monophobia/blockstates/opaque_block.json
+f1b51827ebe7ee84a721a98390db4b0c3cbf39e9 assets/monophobia/blockstates/opaque_ore.json
+6c8c2eff1a15c526e6fa0da4cc2fdad402c60770 assets/monophobia/blockstates/raw_opaque_block.json
+7462451cc3e8a89feb10eeda924d12da0fb47c67 assets/monophobia/models/block/deepslate_opaque_ore.json
+eabd2b6c00bb45b4d08e5ad9209b7fbde3b9d533 assets/monophobia/models/block/opaque_block.json
+d228348c356a89e043a80bf9f9861fc71d564a56 assets/monophobia/models/block/opaque_ore.json
+14b9a84fc83300c794984713b6b06605ceb2a760 assets/monophobia/models/block/raw_opaque_block.json
+4daf4e4527c47e228b1d0f61b868b090a07b5668 assets/monophobia/models/item/deepslate_opaque_ore.json
+d2ac87af6381da84153913c12fedb584cef58a46 assets/monophobia/models/item/opaque_block.json
+5017a42b68fab502352d1a9a4ef7d3c818ffb9f3 assets/monophobia/models/item/opaque_ore.json
+464eb2136515ed1bb2cdbc8519984cd6350dec42 assets/monophobia/models/item/raw_opaque_block.json
