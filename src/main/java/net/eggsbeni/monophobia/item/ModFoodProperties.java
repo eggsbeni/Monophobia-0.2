@@ -6,6 +6,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
 
 public class ModFoodProperties {
-    public static final FoodProperties VOLATILE_FRUIT = new FoodProperties.Builder().nutrition(5).saturationModifier(3)
-            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300), 0.45f).build();
+    public static final FoodProperties VOLATILE_FRUIT = new FoodProperties.Builder().nutrition(6).saturationModifier(0.3F)
+            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 400), 0.45f).build();
 }

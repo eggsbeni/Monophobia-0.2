@@ -44,6 +44,7 @@ public class ModCreativeModeTabs {
                                 // Uses pOutput.accept() again to add ModItems.RAW_OPAQUE to the tab.
                                 pOutput.accept(ModItems.RAW_OPAQUE);
                                 pOutput.accept(ModItems.VOLATILE_FRUIT);
+                                pOutput.accept(ModItems.CRYSTAL_GROWTH_SHARD);
                             })
                             // Finalizes the creation of the tab with build(), which completes the setup.
                             .build());

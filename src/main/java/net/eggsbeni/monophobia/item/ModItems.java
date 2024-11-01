@@ -2,6 +2,7 @@ package net.eggsbeni.monophobia.item;
 
 // Reminder: Import statements bring in specific classes, methods, or fields from Minecraft or the mod API for use here.
 import net.eggsbeni.monophobia.MonophobiaMod; // Imports the MonophobiaMod class, which is the main class of your mod.
+import net.eggsbeni.monophobia.item.custom.FuelItem;
 import net.minecraft.world.item.Item; // Imports the Item class from Minecraft, representing items in the game.
 import net.neoforged.bus.api.IEventBus; // Imports IEventBus, used to manage events in the modding framework.
 import net.neoforged.neoforge.registries.DeferredItem; // Imports DeferredItem, for creating and registering items.
@@ -31,6 +32,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> VOLATILE_FRUIT =
             ITEMS.registerItem("volatile_fruit", Item::new, new Item.Properties().food(ModFoodProperties.VOLATILE_FRUIT));
+
+    public static final DeferredItem<Item> CRYSTAL_GROWTH_SHARD =
+            ITEMS.registerItem("crystal_growth_shard", properties -> new FuelItem(properties, 1500),new Item.Properties());
 
     // Declares a method named register, with a parameter named eventBus of type IEventBus.
     // This method registers all items in the ITEMS registry, linking them to Minecraft’s event system.

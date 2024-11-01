@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "monophobia:block/raw_opaque_block"
-  }
-}
