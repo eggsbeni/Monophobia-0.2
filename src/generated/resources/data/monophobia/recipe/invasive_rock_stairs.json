@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "invasive_rock",
+  "key": {
+    "#": {
+      "item": "monophobia:invasive_rock"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "monophobia:invasive_rock_stairs"
+  }
+}

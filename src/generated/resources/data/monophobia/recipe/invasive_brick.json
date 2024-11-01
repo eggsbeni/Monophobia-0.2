@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "monophobia:invasive_stone"
+    }
+  },
+  "pattern": [
+    "   ",
+    " BB",
+    " BB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "monophobia:invasive_brick"
+  }
+}

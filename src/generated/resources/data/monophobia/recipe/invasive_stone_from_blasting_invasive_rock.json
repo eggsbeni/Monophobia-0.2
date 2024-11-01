@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "invasive_stone",
+  "ingredient": {
+    "item": "monophobia:invasive_rock"
+  },
+  "result": {
+    "count": 1,
+    "id": "monophobia:invasive_stone"
+  }
+}
