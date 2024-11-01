@@ -3,6 +3,12 @@
     "monophobia:opaque_block",
     "monophobia:raw_opaque_block",
     "monophobia:opaque_ore",
-    "monophobia:deepslate_opaque_ore"
+    "monophobia:deepslate_opaque_ore",
+    "monophobia:invasive_rock",
+    "monophobia:invasive_rock_stairs",
+    "monophobia:invasive_rock_slab",
+    "monophobia:invasive_stone",
+    "monophobia:invasive_brick",
+    "monophobia:solidified_invasive_stone"
   ]
 }

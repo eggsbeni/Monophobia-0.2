@@ -23,6 +23,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> OPAQUE_SMELTABLES = List.of(ModItems.RAW_OPAQUE,
                 ModBlocks.OPAQUE_ORE, ModBlocks.DEEPSLATE_OPAQUE_ORE);
 
+        List<ItemLike> INVASIVE_SMELTABLES = List.of(ModBlocks.INVASIVE_ROCK);
+        List<ItemLike> SMOOTH_SMELTABLES = List.of(ModBlocks.INVASIVE_STONE);
+
 
         //Opaque Ore Crafting Set
 
@@ -44,10 +47,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.OPAQUE_BLOCK.get())
                 .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
 
+        //Invasive Rock Crafting Set
+
+        stairBuilder(ModBlocks.INVASIVE_ROCK_STAIRS.get(), Ingredient.of(ModBlocks.INVASIVE_ROCK.get())).group("invasive_rock")
+                        .unlockedBy("has_invasive_stone", has(ModBlocks.INVASIVE_ROCK.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INVASIVE_ROCK_SLAB.get(), ModBlocks.INVASIVE_ROCK.get());
+
+        //Invasive Stone Crafting Set
+
+        //Invasive Brick Crafting Set
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.INVASIVE_BRICK.get())
+                .pattern("   ")
+                .pattern(" BB")
+                .pattern(" BB")
+                .define('B', ModBlocks.INVASIVE_STONE.get())
+                .unlockedBy("has_invasive_stone", has(ModBlocks.INVASIVE_STONE.get())).save(pRecipeOutput);
+
+        //Smooth Invasive Crafting Set
+
         //Opaque Ore Smelting Set
 
         oreSmelting(pRecipeOutput, OPAQUE_SMELTABLES, RecipeCategory.MISC, ModItems.OPAQUE_INGOT.get(), 0.25f, 200, "opaque_ore");
-        oreBlasting(pRecipeOutput, OPAQUE_SMELTABLES, RecipeCategory.MISC, ModItems.OPAQUE_INGOT.get(), 0.25f, 200, "opaque_ore");
+        oreBlasting(pRecipeOutput, OPAQUE_SMELTABLES, RecipeCategory.MISC, ModItems.OPAQUE_INGOT.get(), 0.25f, 100, "opaque_ore");
+
+        //Invasive Blocks Smelting Set
+        oreSmelting(pRecipeOutput, INVASIVE_SMELTABLES, RecipeCategory.MISC, ModBlocks.INVASIVE_STONE.get(), 0.1f, 200, "invasive_stone");
+        oreBlasting(pRecipeOutput, INVASIVE_SMELTABLES, RecipeCategory.MISC, ModBlocks.INVASIVE_STONE.get(), 0.1f, 100, "invasive_stone");
+        oreSmelting(pRecipeOutput, SMOOTH_SMELTABLES, RecipeCategory.MISC, ModBlocks.SOLIDIFIED_INVASIVE_STONE.get(), 0.1f, 200, "solidified_invasive_stone");
+        oreBlasting(pRecipeOutput, SMOOTH_SMELTABLES, RecipeCategory.MISC, ModBlocks.SOLIDIFIED_INVASIVE_STONE.get(), 0.1f, 100, "solidified_invasive_stone");
     }
 
 

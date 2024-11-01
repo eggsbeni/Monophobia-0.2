@@ -1,5 +1,11 @@
-// 1.21.1	2024-10-31T21:41:28.7229097	Loot Tables
+// 1.21.1	2024-11-01T00:57:55.9192993	Loot Tables
 1258b8ebc005bb6aeeca9a2bc2b8a9d31d2513ac data/monophobia/loot_table/blocks/deepslate_opaque_ore.json
+4ee3f94aae140122495deca905988df1b8fde4fa data/monophobia/loot_table/blocks/invasive_brick.json
+440ed111d45963fa8530c6d1de5435d2e4012952 data/monophobia/loot_table/blocks/invasive_rock.json
+454cfb246a69af4fa87cdba604434c30731723e8 data/monophobia/loot_table/blocks/invasive_rock_slab.json
+3bee80de654f3d03c27caed81c67a67d05c7f6cf data/monophobia/loot_table/blocks/invasive_rock_stairs.json
+d1188efc6b04c29fde029f862b01e1485ccbd2aa data/monophobia/loot_table/blocks/invasive_stone.json
 f9183c2d97669fc584a915418cca90457705d873 data/monophobia/loot_table/blocks/opaque_block.json
 49d0bbe07cb7887ee4ebfd8d6356cbde3ecf9d92 data/monophobia/loot_table/blocks/opaque_ore.json
 9ad5160f2805cc1deb312d9efc3d02610f49cbff data/monophobia/loot_table/blocks/raw_opaque_block.json
+6278350c315a72eaed126958c777d9f7495c34ae data/monophobia/loot_table/blocks/solidified_invasive_stone.json

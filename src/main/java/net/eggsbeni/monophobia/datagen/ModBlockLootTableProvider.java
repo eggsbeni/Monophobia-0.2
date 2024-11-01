@@ -27,6 +27,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.OPAQUE_ORE.get(), ModItems.RAW_OPAQUE.get()));
         this.add(ModBlocks.DEEPSLATE_OPAQUE_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_OPAQUE_ORE.get(), ModItems.RAW_OPAQUE.get()));
+        //Invasive Rock Set
+        dropSelf(ModBlocks.INVASIVE_ROCK.get());
+        dropSelf(ModBlocks.INVASIVE_ROCK_STAIRS.get());
+        this.add(ModBlocks.INVASIVE_ROCK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.INVASIVE_ROCK_SLAB.get()));
+        //Invasive Stone Set
+        dropSelf(ModBlocks.INVASIVE_STONE.get());
+        //Invasive Brick Set
+        dropSelf(ModBlocks.INVASIVE_BRICK.get());
+        //Invasive Smooth Set
+        dropSelf(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get());
+
 
     }
 

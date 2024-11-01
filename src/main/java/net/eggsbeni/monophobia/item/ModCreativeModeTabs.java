@@ -38,12 +38,15 @@ public class ModCreativeModeTabs {
                             // Creates a new ItemStack (a stack of items) with ModItems.OPAQUE_INGOT as the icon item.
                             .icon(() -> new ItemStack(ModItems.OPAQUE_INGOT.get()))
                             // Defines which items will display in the tab using displayItems().
+                            // basically this is the list of things that will appear in the tab
                             .displayItems((pParameters, pOutput) -> {
-                                // Uses pOutput.accept() to add ModItems.OPAQUE_INGOT to the tab.
+                                // Uses pOutput.accept() to add ModItems.ITEM_NAME to the tab.
+                                // Opaque Items
                                 pOutput.accept(ModItems.OPAQUE_INGOT);
-                                // Uses pOutput.accept() again to add ModItems.RAW_OPAQUE to the tab.
                                 pOutput.accept(ModItems.RAW_OPAQUE);
+                                // Food Items
                                 pOutput.accept(ModItems.VOLATILE_FRUIT);
+                                // Fuel Items
                                 pOutput.accept(ModItems.CRYSTAL_GROWTH_SHARD);
                             })
                             // Finalizes the creation of the tab with build(), which completes the setup.
@@ -61,13 +64,24 @@ public class ModCreativeModeTabs {
                             // Uses withTabsBefore() to place this tab before the items tab in the menu.
                             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "monophobia_items_tab"))
                             // Defines items for this tab using displayItems().
+                            // basically this is the list of things that will appear in the tab
                             .displayItems((pParameters, pOutput) -> {
-                                // Uses pOutput.accept() to add ModBlocks.OPAQUE_BLOCK to the tab.
+                                //adds things the same way as the item tab above
+                                // Opaque Blocks
                                 pOutput.accept(ModBlocks.OPAQUE_BLOCK);
-                                // Uses pOutput.accept() to add ModBlocks.RAW_OPAQUE_BLOCK to the tab.
                                 pOutput.accept(ModBlocks.RAW_OPAQUE_BLOCK);
                                 pOutput.accept(ModBlocks.OPAQUE_ORE);
                                 pOutput.accept(ModBlocks.DEEPSLATE_OPAQUE_ORE);
+                                // Invasive Rock Blocks
+                                pOutput.accept(ModBlocks.INVASIVE_ROCK);
+                                pOutput.accept(ModBlocks.INVASIVE_ROCK_STAIRS);
+                                pOutput.accept(ModBlocks.INVASIVE_ROCK_SLAB);
+                                // Invasive Stone Blocks
+                                pOutput.accept(ModBlocks.INVASIVE_STONE);
+                                // Invasive Brick Blocks
+                                pOutput.accept(ModBlocks.INVASIVE_BRICK);
+                                // Invasive Smooth Blocks
+                                pOutput.accept(ModBlocks.SOLIDIFIED_INVASIVE_STONE);
                             })
                             // Completes the tab creation.
                             .build());

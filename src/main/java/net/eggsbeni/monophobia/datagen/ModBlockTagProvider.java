@@ -19,17 +19,30 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                //opaque set
                 .add(ModBlocks.OPAQUE_BLOCK.get())
                 .add(ModBlocks.RAW_OPAQUE_BLOCK.get())
                 .add(ModBlocks.OPAQUE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_OPAQUE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_OPAQUE_ORE.get())
+                //invasive rock set
+                .add(ModBlocks.INVASIVE_ROCK.get())
+                .add(ModBlocks.INVASIVE_ROCK_STAIRS.get())
+                .add(ModBlocks.INVASIVE_ROCK_SLAB.get())
+                //invasive stone set
+                .add(ModBlocks.INVASIVE_STONE.get())
+                //invasive brick set
+                .add(ModBlocks.INVASIVE_BRICK.get())
+                //invasive smoothstone set
+                .add(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
+                //opaque set
                 .add(ModBlocks.RAW_OPAQUE_BLOCK.get())
                 .add(ModBlocks.OPAQUE_ORE.get())
                 .add(ModBlocks.DEEPSLATE_OPAQUE_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
+                //opaque set
                 .add(ModBlocks.OPAQUE_BLOCK.get());
     }
 }

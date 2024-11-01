@@ -13,6 +13,19 @@
   "block.monophobia.opaque_block": "Block of Opaque",
   "block.monophobia.opaque_ore": "Opaque Ore",
   "block.monophobia.deepslate_opaque_ore": "Deepslate Opaque Ore",
-  "block.monophobia.raw_opaque_block": "Block of Raw Opaque"
+  "block.monophobia.raw_opaque_block": "Block of Raw Opaque",
+
+  "block.monophobia.invasive_rock": "Invasive Rock",
+  "block.monophobia.invasive_rock_stairs": "Invasive Rock Stairs",
+  "block.monophobia.invasive_rock_slab": "Invasive Rock Slab",
+
+  "block.monophobia.invasive_stone": "Invasive Stone",
+
+  "block.monophobia.invasive_brick": "Invasive Brick",
+
+  "block.monophobia.solidified_invasive_stone": "Solidified Invasive Stone"
+
+
+
 
 }
