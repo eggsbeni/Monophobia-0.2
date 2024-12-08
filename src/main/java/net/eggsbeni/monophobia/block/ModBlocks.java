@@ -5,11 +5,9 @@ import net.eggsbeni.monophobia.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -51,20 +49,49 @@ public class ModBlocks {
     public static final DeferredBlock<Block> INVASIVE_ROCK_SLAB = registerBlock("invasive_rock_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> INVASIVE_ROCK_WALL = registerBlock("invasive_rock_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
     //Invasive Stone Building Blocks
 
     public static final DeferredBlock<Block> INVASIVE_STONE = registerBlock("invasive_stone",
             () -> new Block(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_STONE_STAIRS = registerBlock("invasive_stone_stairs",
+            () -> new StairBlock(ModBlocks.INVASIVE_STONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_STONE_SLAB = registerBlock("invasive_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_STONE_PRESSURE_PLATE = registerBlock("invasive_stone_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_STONE_BUTTON = registerBlock("invasive_stone_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 10, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noCollission()));
 
     //Invasive Bricks Building Blocks
 
     public static final DeferredBlock<Block> INVASIVE_BRICK = registerBlock("invasive_brick",
             () -> new Block(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> INVASIVE_BRICK_STAIRS = registerBlock("invasive_brick_stairs",
+            () -> new StairBlock(ModBlocks.INVASIVE_BRICK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_BRICK_SLAB = registerBlock("invasive_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> INVASIVE_BRICK_WALL = registerBlock("invasive_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
     //Invasive Smooth Stone Building Blocks
 
     public static final DeferredBlock<Block> SOLIDIFIED_INVASIVE_STONE = registerBlock("solidified_invasive_stone",
             () -> new Block(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> SOLIDIFIED_INVASIVE_STONE_SLAB = registerBlock("solidified_invasive_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2.0f).requiresCorrectToolForDrops()));
 
 
 

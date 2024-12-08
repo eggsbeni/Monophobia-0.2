@@ -6,6 +6,7 @@ import net.eggsbeni.monophobia.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -54,6 +55,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INVASIVE_ROCK_SLAB.get(), ModBlocks.INVASIVE_ROCK.get());
 
         //Invasive Stone Crafting Set
+        pressurePlate(pRecipeOutput, ModBlocks.INVASIVE_STONE_PRESSURE_PLATE.get(), ModBlocks.INVASIVE_STONE.get());
+        buttonBuilder(ModBlocks.INVASIVE_STONE_BUTTON.get(), Ingredient.of(ModBlocks.INVASIVE_STONE.get())).group("invasive_stone")
+                        .unlockedBy("has_invasive_stone", has(ModBlocks.INVASIVE_STONE.get())).save(pRecipeOutput);
+
+                    //this is for walls
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INVASIVE_ROCK_WALL.get(), ModBlocks.INVASIVE_ROCK.get());
 
         //Invasive Brick Crafting Set
 
@@ -64,7 +71,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModBlocks.INVASIVE_STONE.get())
                 .unlockedBy("has_invasive_stone", has(ModBlocks.INVASIVE_STONE.get())).save(pRecipeOutput);
 
+                    //this is for walls
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INVASIVE_BRICK_WALL.get(), ModBlocks.INVASIVE_BRICK.get());
+
+
         //Smooth Invasive Crafting Set
+
+
+        //Opaque Tools Crafting Set
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_SWORD.get())
+                .pattern(" B ")
+                .pattern(" B ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OPAQUE_PICKAXE.get())
+                .pattern("BBB")
+                .pattern(" C ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OPAQUE_SHOVEL.get())
+                .pattern(" B ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        // recipe for the combat section
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_AXE.get())
+                .pattern("BB ")
+                .pattern("BC ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput, "opaque_axe_combat");
+
+        // recipe for the tool section
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OPAQUE_AXE.get())
+                .pattern("BB ")
+                .pattern("BC ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput, "opaque_axe_tool");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OPAQUE_HOE.get())
+                .pattern("BB ")
+                .pattern(" C ")
+                .pattern(" C ")
+                .define('B', ModItems.OPAQUE_INGOT.get())
+                .define('C', Items.STICK)
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
 
         //Opaque Ore Smelting Set
 

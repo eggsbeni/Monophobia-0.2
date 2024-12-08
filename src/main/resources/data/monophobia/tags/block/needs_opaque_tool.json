@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_opaque_tool"
+  ],
+  "remove": [
+    "#mccourse:needs_opaque_tool"
+  ]
+}

@@ -1,5 +1,13 @@
-// 1.21.1	2024-10-31T21:41:28.719896	Item Models: monophobia
+// 1.21.1	2024-12-08T16:00:37.81073	Item Models: monophobia
 793e2efa7b45fd5b517ebfa9c22a9a9e3eb8a617 assets/monophobia/models/item/crystal_growth_shard.json
+55c273b1fac80ea30ac61622938fe0c926cc6380 assets/monophobia/models/item/invasive_brick_wall.json
+4b91b32f0686c4513dba75e42cae6fa306f535d3 assets/monophobia/models/item/invasive_rock_wall.json
+01ee7d422dd244a6b12c66f1223984ab29891139 assets/monophobia/models/item/invasive_stone_button.json
+406fe64f6a4cde77560201c7e1a65be01c860f0b assets/monophobia/models/item/opaque_axe.json
+72ff55528476e69a9327a2ede0e55f08253b75bb assets/monophobia/models/item/opaque_hoe.json
 f6753602b6d66fc9661f55f26d2746f02a953932 assets/monophobia/models/item/opaque_ingot.json
+d322cf5c77dd320500d0897d3bd76eb272d33107 assets/monophobia/models/item/opaque_pickaxe.json
+f1f1194292f68f6307e6562056064f9475eec37f assets/monophobia/models/item/opaque_shovel.json
+a34bd673ba3889a8088a1f9426c00f09d3457b28 assets/monophobia/models/item/opaque_sword.json
 55bd8fac4381003d6519c4129e288b2d94dd6a70 assets/monophobia/models/item/raw_opaque.json
 e1ad7c1cc5db7ab3df51284dd349eb8de421b685 assets/monophobia/models/item/volatile_fruit.json

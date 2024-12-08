@@ -30,10 +30,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.INVASIVE_ROCK_SLAB.get())
                 //invasive stone set
                 .add(ModBlocks.INVASIVE_STONE.get())
+                .add(ModBlocks.INVASIVE_STONE_STAIRS.get())
+                .add(ModBlocks.INVASIVE_STONE_SLAB.get())
                 //invasive brick set
                 .add(ModBlocks.INVASIVE_BRICK.get())
+                .add(ModBlocks.INVASIVE_STONE_STAIRS.get())
+                .add(ModBlocks.INVASIVE_STONE_SLAB.get())
                 //invasive smoothstone set
-                .add(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get());
+                .add(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get())
+                .add(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 //opaque set
@@ -44,5 +49,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 //opaque set
                 .add(ModBlocks.OPAQUE_BLOCK.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.INVASIVE_BRICK_WALL.get())
+                .add(ModBlocks.INVASIVE_ROCK_WALL.get());
     }
 }

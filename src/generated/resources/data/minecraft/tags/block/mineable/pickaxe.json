@@ -8,7 +8,12 @@
     "monophobia:invasive_rock_stairs",
     "monophobia:invasive_rock_slab",
     "monophobia:invasive_stone",
+    "monophobia:invasive_stone_stairs",
+    "monophobia:invasive_stone_slab",
     "monophobia:invasive_brick",
-    "monophobia:solidified_invasive_stone"
+    "monophobia:invasive_stone_stairs",
+    "monophobia:invasive_stone_slab",
+    "monophobia:solidified_invasive_stone",
+    "monophobia:solidified_invasive_stone_slab"
   ]
 }

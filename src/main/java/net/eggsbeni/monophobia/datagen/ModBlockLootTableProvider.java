@@ -32,12 +32,24 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.INVASIVE_ROCK_STAIRS.get());
         this.add(ModBlocks.INVASIVE_ROCK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.INVASIVE_ROCK_SLAB.get()));
+        dropSelf(ModBlocks.INVASIVE_ROCK_WALL.get());
         //Invasive Stone Set
         dropSelf(ModBlocks.INVASIVE_STONE.get());
+        dropSelf(ModBlocks.INVASIVE_STONE_STAIRS.get());
+        this.add(ModBlocks.INVASIVE_STONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.INVASIVE_STONE_SLAB.get()));
+        dropSelf(ModBlocks.INVASIVE_STONE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.INVASIVE_STONE_BUTTON.get());
         //Invasive Brick Set
         dropSelf(ModBlocks.INVASIVE_BRICK.get());
+        dropSelf(ModBlocks.INVASIVE_BRICK_STAIRS.get());
+        this.add(ModBlocks.INVASIVE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.INVASIVE_BRICK_SLAB.get()));
+        dropSelf(ModBlocks.INVASIVE_BRICK_WALL.get());
         //Invasive Smooth Set
         dropSelf(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get());
+        this.add(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB.get()));
 
 
     }

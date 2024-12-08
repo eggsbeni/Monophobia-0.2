@@ -7,8 +7,18 @@
 
   "item.monophobia.crystal_growth_shard": "Crystal Growth Shard",
 
+  "item.monophobia.opaque_sword": "Opaque Sword",
+  "item.monophobia.opaque_pickaxe": "Opaque Pickaxe",
+  "item.monophobia.opaque_shovel": "Opaque Shovel",
+  "item.monophobia.opaque_axe": "Opaque Axe",
+  "item.monophobia.opaque_hoe": "Opaque Hoe",
+
+
+
   "itemGroup.monophobia.monophobia_items_tab": "Monophobia Items",
   "itemGroup.monophobia.monophobia_blocks_tab": "Monophobia Blocks",
+
+
 
   "block.monophobia.opaque_block": "Block of Opaque",
   "block.monophobia.opaque_ore": "Opaque Ore",
@@ -18,12 +28,21 @@
   "block.monophobia.invasive_rock": "Invasive Rock",
   "block.monophobia.invasive_rock_stairs": "Invasive Rock Stairs",
   "block.monophobia.invasive_rock_slab": "Invasive Rock Slab",
+  "block.monophobia.invasive_rock_wall": "Invasive Rock Wall",
 
   "block.monophobia.invasive_stone": "Invasive Stone",
+  "block.monophobia.invasive_stone_stairs": "Invasive Stone Stairs",
+  "block.monophobia.invasive_stone_slab": "Invasive Stone Slab",
+  "block.monophobia.invasive_stone_pressure_plate": "Invasive Stone Pressure Plate",
+  "block.monophobia.invasive_stone_button": "Invasive Stone Button",
 
   "block.monophobia.invasive_brick": "Invasive Brick",
+  "block.monophobia.invasive_brick_stairs": "Invasive Brick Stairs",
+  "block.monophobia.invasive_brick_slab": "Invasive Brick Slab",
+  "block.monophobia.invasive_brick_wall": "Invasive Brick Wall",
 
-  "block.monophobia.solidified_invasive_stone": "Solidified Invasive Stone"
+  "block.monophobia.solidified_invasive_stone": "Solidified Invasive Stone",
+  "block.monophobia.solidified_invasive_stone_slab": "Solidified Invasive Stone Slab"
 
 
 

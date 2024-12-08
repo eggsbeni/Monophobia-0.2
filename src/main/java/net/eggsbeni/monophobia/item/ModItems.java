@@ -3,7 +3,7 @@ package net.eggsbeni.monophobia.item;
 // Reminder: Import statements bring in specific classes, methods, or fields from Minecraft or the mod API for use here.
 import net.eggsbeni.monophobia.MonophobiaMod; // Imports the MonophobiaMod class, which is the main class of your mod.
 import net.eggsbeni.monophobia.item.custom.FuelItem;
-import net.minecraft.world.item.Item; // Imports the Item class from Minecraft, representing items in the game.
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus; // Imports IEventBus, used to manage events in the modding framework.
 import net.neoforged.neoforge.registries.DeferredItem; // Imports DeferredItem, for creating and registering items.
 import net.neoforged.neoforge.registries.DeferredRegister; // Imports DeferredRegister, for deferred item registration.
@@ -36,10 +36,29 @@ public class ModItems {
     public static final DeferredItem<Item> CRYSTAL_GROWTH_SHARD =
             ITEMS.registerItem("crystal_growth_shard", properties -> new FuelItem(properties, 1500),new Item.Properties());
 
+    //opaque toolset
+
+    public static final DeferredItem<Item> OPAQUE_SWORD = ITEMS.register("opaque_sword",
+            () -> new SwordItem(ModToolTiers.OPAQUE,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.OPAQUE, 3, -2.4f ))));
+    public static final DeferredItem<Item> OPAQUE_PICKAXE = ITEMS.register("opaque_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.OPAQUE,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.OPAQUE, 1, -2.8f ))));
+    public static final DeferredItem<Item> OPAQUE_SHOVEL = ITEMS.register("opaque_shovel",
+            () -> new ShovelItem(ModToolTiers.OPAQUE,
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.OPAQUE, 1.5f, -3.0f ))));
+    public static final DeferredItem<Item> OPAQUE_AXE = ITEMS.register("opaque_axe",
+            () -> new AxeItem(ModToolTiers.OPAQUE,
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.OPAQUE, 6, -3.2f ))));
+    public static final DeferredItem<Item> OPAQUE_HOE = ITEMS.register("opaque_hoe",
+            () -> new HoeItem(ModToolTiers.OPAQUE,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.OPAQUE, 0, -3.0f ))));
+
     // Declares a method named register, with a parameter named eventBus of type IEventBus.
     // This method registers all items in the ITEMS registry, linking them to Minecraft’s event system.
     public static void register(IEventBus eventBus) {
         // Calls the register() method on ITEMS, passing in the eventBus to actually register the items.
         ITEMS.register(eventBus);
+
     }
 }

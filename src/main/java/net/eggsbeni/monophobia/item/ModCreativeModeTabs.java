@@ -48,6 +48,12 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(ModItems.VOLATILE_FRUIT);
                                 // Fuel Items
                                 pOutput.accept(ModItems.CRYSTAL_GROWTH_SHARD);
+                                //opaque tools
+                                pOutput.accept(ModItems.OPAQUE_SWORD);
+                                pOutput.accept(ModItems.OPAQUE_PICKAXE);
+                                pOutput.accept(ModItems.OPAQUE_SHOVEL);
+                                pOutput.accept(ModItems.OPAQUE_AXE);
+                                pOutput.accept(ModItems.OPAQUE_HOE);
                             })
                             // Finalizes the creation of the tab with build(), which completes the setup.
                             .build());
@@ -76,12 +82,21 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(ModBlocks.INVASIVE_ROCK);
                                 pOutput.accept(ModBlocks.INVASIVE_ROCK_STAIRS);
                                 pOutput.accept(ModBlocks.INVASIVE_ROCK_SLAB);
+                                pOutput.accept(ModBlocks.INVASIVE_ROCK_WALL);
                                 // Invasive Stone Blocks
                                 pOutput.accept(ModBlocks.INVASIVE_STONE);
+                                pOutput.accept(ModBlocks.INVASIVE_STONE_STAIRS);
+                                pOutput.accept(ModBlocks.INVASIVE_STONE_SLAB);
+                                pOutput.accept(ModBlocks.INVASIVE_STONE_PRESSURE_PLATE);
+                                pOutput.accept(ModBlocks.INVASIVE_STONE_BUTTON);
                                 // Invasive Brick Blocks
                                 pOutput.accept(ModBlocks.INVASIVE_BRICK);
+                                pOutput.accept(ModBlocks.INVASIVE_BRICK_STAIRS);
+                                pOutput.accept(ModBlocks.INVASIVE_BRICK_SLAB);
+                                pOutput.accept(ModBlocks.INVASIVE_BRICK_WALL);
                                 // Invasive Smooth Blocks
                                 pOutput.accept(ModBlocks.SOLIDIFIED_INVASIVE_STONE);
+                                pOutput.accept(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB);
                             })
                             // Completes the tab creation.
                             .build());
