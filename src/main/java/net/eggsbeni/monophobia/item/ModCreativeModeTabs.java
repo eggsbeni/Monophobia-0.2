@@ -54,6 +54,13 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(ModItems.OPAQUE_SHOVEL);
                                 pOutput.accept(ModItems.OPAQUE_AXE);
                                 pOutput.accept(ModItems.OPAQUE_HOE);
+                                //opaque armor
+                                pOutput.accept(ModItems.OPAQUE_HELMET);
+                                pOutput.accept(ModItems.OPAQUE_CHESTPLATE);
+                                pOutput.accept(ModItems.OPAQUE_LEGGINGS);
+                                pOutput.accept(ModItems.OPAQUE_BOOTS);
+                                //opaque armor trim
+                                pOutput.accept(ModItems.MONO_SMITHING_TEMPLATE);
                             })
                             // Finalizes the creation of the tab with build(), which completes the setup.
                             .build());

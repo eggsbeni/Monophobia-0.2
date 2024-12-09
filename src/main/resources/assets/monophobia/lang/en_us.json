@@ -13,6 +13,16 @@
   "item.monophobia.opaque_axe": "Opaque Axe",
   "item.monophobia.opaque_hoe": "Opaque Hoe",
 
+  "item.monophobia.opaque_helmet": "Opaque Helmet",
+  "item.monophobia.opaque_chestplate": "Opaque Chestplate",
+  "item.monophobia.opaque_leggings": "Opaque Leggings",
+  "item.monophobia.opaque_boots": "Opaque Boots",
+
+  "item.monophobia.mono_armor_trim_smithing_template": "Mono Trim Template",
+  "trim_pattern.monophobia.mono": "Mono Armor Trim",
+  "trim_material.monophobia.opaque_ingot": "Opaque Material",
+
+
 
 
   "itemGroup.monophobia.monophobia_items_tab": "Monophobia Items",

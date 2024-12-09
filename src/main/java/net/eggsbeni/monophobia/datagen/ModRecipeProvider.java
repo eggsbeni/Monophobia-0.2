@@ -6,6 +6,7 @@ import net.eggsbeni.monophobia.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -129,6 +130,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.OPAQUE_INGOT.get())
                 .define('C', Items.STICK)
                 .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        // opaque armor crafting set
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.OPAQUE_INGOT.get())
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.OPAQUE_INGOT.get())
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.OPAQUE_INGOT.get())
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OPAQUE_BOOTS.get())
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.OPAQUE_INGOT.get())
+                .unlockedBy("has_opaque_ingot", has(ModItems.OPAQUE_INGOT.get())).save(pRecipeOutput);
+
+
+        //smithing for armor trim
+        trimSmithing(pRecipeOutput, ModItems.MONO_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "mono"));
 
         //Opaque Ore Smelting Set
 

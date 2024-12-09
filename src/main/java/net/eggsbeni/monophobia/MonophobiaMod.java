@@ -1,6 +1,7 @@
 package net.eggsbeni.monophobia;
 
 import net.eggsbeni.monophobia.block.ModBlocks;
+import net.eggsbeni.monophobia.item.ModArmorMaterials;
 import net.eggsbeni.monophobia.item.ModCreativeModeTabs;
 import net.eggsbeni.monophobia.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -45,6 +46,8 @@ public class MonophobiaMod
         ModItems.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        ModArmorMaterials.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.

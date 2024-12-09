@@ -3,6 +3,7 @@ package net.eggsbeni.monophobia.item;
 // Reminder: Import statements bring in specific classes, methods, or fields from Minecraft or the mod API for use here.
 import net.eggsbeni.monophobia.MonophobiaMod; // Imports the MonophobiaMod class, which is the main class of your mod.
 import net.eggsbeni.monophobia.item.custom.FuelItem;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus; // Imports IEventBus, used to manage events in the modding framework.
 import net.neoforged.neoforge.registries.DeferredItem; // Imports DeferredItem, for creating and registering items.
@@ -53,6 +54,22 @@ public class ModItems {
     public static final DeferredItem<Item> OPAQUE_HOE = ITEMS.register("opaque_hoe",
             () -> new HoeItem(ModToolTiers.OPAQUE,
                     new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.OPAQUE, 0, -3.0f ))));
+
+    //opaque armor
+
+    public static final DeferredItem<Item> OPAQUE_HELMET = ITEMS.register("opaque_helmet",
+            () -> new ArmorItem(ModArmorMaterials.OPAQUE, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> OPAQUE_CHESTPLATE = ITEMS.register("opaque_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.OPAQUE, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> OPAQUE_LEGGINGS = ITEMS.register("opaque_leggings",
+            () -> new ArmorItem(ModArmorMaterials.OPAQUE, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> OPAQUE_BOOTS = ITEMS.register("opaque_boots",
+            () -> new ArmorItem(ModArmorMaterials.OPAQUE, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+
+    //the armor trim
+    public static final DeferredItem<Item> MONO_SMITHING_TEMPLATE = ITEMS.register("mono_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "mono")));
+
 
     // Declares a method named register, with a parameter named eventBus of type IEventBus.
     // This method registers all items in the ITEMS registry, linking them to Minecraft’s event system.
