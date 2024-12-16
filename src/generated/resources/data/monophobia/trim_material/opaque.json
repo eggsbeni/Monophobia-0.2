@@ -1,0 +1,9 @@
+{
+  "asset_name": "opaque",
+  "description": {
+    "color": "#605052",
+    "translate": "trim_material.monophobia.opaque"
+  },
+  "ingredient": "monophobia:opaque_ingot",
+  "item_model_index": 0.3
+}

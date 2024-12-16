@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "monophobia:opaque_ingot"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " B ",
+    " C ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "monophobia:opaque_shovel"
+  }
+}

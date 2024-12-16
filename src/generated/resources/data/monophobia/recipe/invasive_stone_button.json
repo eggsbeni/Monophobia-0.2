@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "invasive_stone",
+  "ingredients": [
+    {
+      "item": "monophobia:invasive_stone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "monophobia:invasive_stone_button"
+  }
+}

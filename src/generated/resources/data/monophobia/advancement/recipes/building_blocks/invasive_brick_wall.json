@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_invasive_brick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "monophobia:invasive_brick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "monophobia:invasive_brick_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_invasive_brick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "monophobia:invasive_brick_wall"
+    ]
+  }
+}

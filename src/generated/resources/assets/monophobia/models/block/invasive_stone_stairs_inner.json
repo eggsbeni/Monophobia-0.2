@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "monophobia:block/invasive_stone",
+    "side": "monophobia:block/invasive_stone",
+    "top": "monophobia:block/invasive_stone"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "monophobia:block/solidified_invasive_stone",
+    "side": "monophobia:block/solidified_invasive_stone",
+    "top": "monophobia:block/solidified_invasive_stone"
+  }
+}

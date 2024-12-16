@@ -1,0 +1,8 @@
+{
+  "asset_id": "monophobia:mono",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.monophobia.mono"
+  },
+  "template_item": "monophobia:mono_armor_trim_smithing_template"
+}
