@@ -110,7 +110,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     // armor trim helper method
     // credit to El_Redstoniano for making this (i stole it)
     private void trimmedArmorItem(DeferredItem<Item> itemDeferredItem) {
-        final String MOD_ID = MonophobiaMod.MOD_ID; // Change this to your mod id
+        final String MOD_ID = MonophobiaMod.MOD_ID;
 
         if (itemDeferredItem.get() instanceof ArmorItem armorItem) {
             trimMaterials.forEach((trimMaterial, value) -> {

@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class ModTrimMaterials {
     public static final ResourceKey<TrimMaterial> OPAQUE =
-            ResourceKey.create(Registries.TRIM_MATERIAL, ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "opaque_ingot"));
+            ResourceKey.create(Registries.TRIM_MATERIAL, ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "opaque"));
 
     public static void bootstrap(BootstrapContext<TrimMaterial> context) {
         register(context, OPAQUE, ModItems.OPAQUE_INGOT.get(), Style.EMPTY.withColor(TextColor.parseColor("#605052").getOrThrow()), 0.3F);
