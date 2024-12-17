@@ -1,5 +1,7 @@
-// 1.21.1	2024-12-07T17:49:48.1841568	Tags for minecraft:block mod id monophobia
+// 1.21.1	2024-12-17T15:59:18.6112572	Tags for minecraft:block mod id monophobia
+66a2005c85909725f487f64cdd86cb09ef1d9454 data/minecraft/tags/block/logs_that_burn.json
 4bf68bd1a39f07041df3cf4c4beed2402f475b22 data/minecraft/tags/block/mineable/pickaxe.json
+c524134c52add76da4e706f06b7c8c75f7b312e7 data/minecraft/tags/block/mineable/shovel.json
 994fe4fca5c70aac918e6127db978effb25a52a6 data/minecraft/tags/block/needs_iron_tool.json
 64bb77b2c659cb6eee7420abefa8e743d64a9623 data/minecraft/tags/block/needs_stone_tool.json
 eb401273582d49e62b32fd0a6f92eada67af81d8 data/minecraft/tags/block/walls.json

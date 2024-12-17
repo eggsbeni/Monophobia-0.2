@@ -1,4 +1,6 @@
-// 1.21.1	2024-12-08T20:09:59.481224	Tags for minecraft:item mod id monophobia
+// 1.21.1	2024-12-16T18:37:49.7538007	Tags for minecraft:item mod id monophobia
+66a2005c85909725f487f64cdd86cb09ef1d9454 data/minecraft/tags/item/logs_that_burn.json
+b983e8446954f1cc6983103ed0f7c45e291c56d8 data/minecraft/tags/item/planks.json
 19682c8d24efa740159ff3f4da5cd0ec492854f6 data/minecraft/tags/item/trimmable_armor.json
 c32f57837cd67c436c0252098f38dc12a46a4a61 data/minecraft/tags/item/trim_materials.json
 9df109c8d777ae1dd394f39a4655230394fd849f data/minecraft/tags/item/trim_templates.json

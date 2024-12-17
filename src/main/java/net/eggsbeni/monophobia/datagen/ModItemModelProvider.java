@@ -80,6 +80,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         //armor trim
         basicItem(ModItems.MONO_SMITHING_TEMPLATE.get());
 
+        //sapling
+        saplingItem(ModBlocks.SECLUDED_SAPLING);
+
+    }
+
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(MonophobiaMod.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     // custom helper method for buttons because for some reason they need a blockstate model and an item model??

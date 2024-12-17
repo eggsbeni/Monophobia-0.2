@@ -104,6 +104,16 @@ public class ModCreativeModeTabs {
                                 // Invasive Smooth Blocks
                                 pOutput.accept(ModBlocks.SOLIDIFIED_INVASIVE_STONE);
                                 pOutput.accept(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB);
+                                // Secluded Wood Blocks
+                                pOutput.accept(ModBlocks.SECLUDED_LOG);
+                                pOutput.accept(ModBlocks.STRIPPED_SECLUDED_LOG);
+                                pOutput.accept(ModBlocks.SECLUDED_WOOD);
+                                pOutput.accept(ModBlocks.STRIPPED_SECLUDED_WOOD);
+                                pOutput.accept(ModBlocks.SECLUDED_PLANKS);
+                                pOutput.accept(ModBlocks.SECLUDED_LEAVES);
+                                pOutput.accept(ModBlocks.SECLUDED_SAPLING);
+                                // Secluded Grass Block
+                                pOutput.accept(ModBlocks.SECLUDED_GRASS_BLOCK);
                             })
                             // Completes the tab creation.
                             .build());

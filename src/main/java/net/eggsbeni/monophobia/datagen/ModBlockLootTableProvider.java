@@ -9,6 +9,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.Set;
 
@@ -50,6 +51,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SOLIDIFIED_INVASIVE_STONE.get());
         this.add(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SOLIDIFIED_INVASIVE_STONE_SLAB.get()));
+        //secluded wood set
+        this.dropSelf(ModBlocks.SECLUDED_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_SECLUDED_LOG.get());
+        this.dropSelf(ModBlocks.SECLUDED_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_SECLUDED_WOOD.get());
+        this.dropSelf(ModBlocks.SECLUDED_PLANKS.get());
+       this.dropSelf(ModBlocks.SECLUDED_SAPLING.get());
+        this.add(ModBlocks.SECLUDED_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.SECLUDED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        //grass for secluded
+        this.add(ModBlocks.SECLUDED_GRASS_BLOCK.get(),
+                block -> createSingleItemTableWithSilkTouch((ModBlocks.SECLUDED_GRASS_BLOCK.get()), Blocks.DIRT));
+
 
 
     }

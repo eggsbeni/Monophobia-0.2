@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-08T20:09:59.4757255	Item Models: monophobia
+// 1.21.1	2024-12-16T18:37:49.749295	Item Models: monophobia
 793e2efa7b45fd5b517ebfa9c22a9a9e3eb8a617 assets/monophobia/models/item/crystal_growth_shard.json
 55c273b1fac80ea30ac61622938fe0c926cc6380 assets/monophobia/models/item/invasive_brick_wall.json
 4b91b32f0686c4513dba75e42cae6fa306f535d3 assets/monophobia/models/item/invasive_rock_wall.json
@@ -55,4 +55,5 @@ d322cf5c77dd320500d0897d3bd76eb272d33107 assets/monophobia/models/item/opaque_pi
 f1f1194292f68f6307e6562056064f9475eec37f assets/monophobia/models/item/opaque_shovel.json
 a34bd673ba3889a8088a1f9426c00f09d3457b28 assets/monophobia/models/item/opaque_sword.json
 55bd8fac4381003d6519c4129e288b2d94dd6a70 assets/monophobia/models/item/raw_opaque.json
+0208d711374372c2c7326422301c93158a53cf35 assets/monophobia/models/item/secluded_sapling.json
 e1ad7c1cc5db7ab3df51284dd349eb8de421b685 assets/monophobia/models/item/volatile_fruit.json

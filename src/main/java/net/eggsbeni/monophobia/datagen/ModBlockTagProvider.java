@@ -53,5 +53,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.INVASIVE_BRICK_WALL.get())
                 .add(ModBlocks.INVASIVE_ROCK_WALL.get());
+
+        //adds the logs to the minecraft tag that makes it so leaves don't decay when on it
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.SECLUDED_LOG.get())
+                .add(ModBlocks.STRIPPED_SECLUDED_LOG.get())
+                .add(ModBlocks.SECLUDED_WOOD.get())
+                .add(ModBlocks.STRIPPED_SECLUDED_WOOD.get());
+
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.SECLUDED_GRASS_BLOCK.get());
     }
 }

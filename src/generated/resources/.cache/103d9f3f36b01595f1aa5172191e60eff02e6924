@@ -1,3 +1,9 @@
-// 1.21.1	2024-12-16T15:04:23.6350852	Registries
+// 1.21.1	2024-12-17T00:33:32.8475292	Registries
+ddb44fc382e1854394536c6043ef88a38f711317 data/monophobia/neoforge/biome_modifier/add_opaque_ore.json
+bf90e2e67b661851d62cb816b6d229f8094b8a53 data/monophobia/neoforge/biome_modifier/add_tree_secluded.json
 6e65825f28721b35a693ab64bd22d09e312662ae data/monophobia/trim_material/opaque.json
 58d48f7304adcc427b2e21424e086a4eb2c7b448 data/monophobia/trim_pattern/mono.json
+67e8bc52f10751ea206ec0e34e41510610c630c9 data/monophobia/worldgen/configured_feature/opaque_ore.json
+a599852471a9656bd4f175c99d12a3a02380bfaf data/monophobia/worldgen/configured_feature/secluded.json
+7aafcfe17fb319d9ee15e1fdf9f10ac75f4d3d31 data/monophobia/worldgen/placed_feature/opaque_ore_placed_key.json
+52329b14fe07b32f672f4a0f68142f1e477da1db data/monophobia/worldgen/placed_feature/secluded_placed.json

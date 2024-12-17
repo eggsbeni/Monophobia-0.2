@@ -1,6 +1,7 @@
 package net.eggsbeni.monophobia.datagen;
 
 import net.eggsbeni.monophobia.MonophobiaMod;
+import net.eggsbeni.monophobia.block.ModBlocks;
 import net.eggsbeni.monophobia.item.ModItems;
 import net.eggsbeni.monophobia.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -33,6 +34,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.MONO_SMITHING_TEMPLATE.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.SECLUDED_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_SECLUDED_LOG.get().asItem())
+                .add(ModBlocks.SECLUDED_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_SECLUDED_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.SECLUDED_PLANKS.get().asItem());
+
 
     }
 }

@@ -52,7 +52,19 @@
   "block.monophobia.invasive_brick_wall": "Invasive Brick Wall",
 
   "block.monophobia.solidified_invasive_stone": "Solidified Invasive Stone",
-  "block.monophobia.solidified_invasive_stone_slab": "Solidified Invasive Stone Slab"
+  "block.monophobia.solidified_invasive_stone_slab": "Solidified Invasive Stone Slab",
+
+  "block.monophobia.secluded_log": "Secluded Log",
+  "block.monophobia.stripped_secluded_log": "Stripped Secluded Log",
+  "block.monophobia.secluded_wood": "Secluded Wood",
+  "block.monophobia.stripped_secluded_wood": "Stripped Secluded Wood",
+  "block.monophobia.secluded_planks": "Secluded Planks",
+  "block.monophobia.secluded_sapling": "Secluded Sapling",
+  "block.monophobia.secluded_leaves": "Secluded Leaves",
+
+  "block.monophobia.secluded_grass_block": "Secluded Grass Block"
+
+
 
 
 

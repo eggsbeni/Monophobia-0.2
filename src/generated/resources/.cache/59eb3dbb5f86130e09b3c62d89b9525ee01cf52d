@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-07T17:49:48.185658	Loot Tables
+// 1.21.1	2024-12-17T15:59:18.6117617	Loot Tables
 1258b8ebc005bb6aeeca9a2bc2b8a9d31d2513ac data/monophobia/loot_table/blocks/deepslate_opaque_ore.json
 4ee3f94aae140122495deca905988df1b8fde4fa data/monophobia/loot_table/blocks/invasive_brick.json
 e0ed95fbd95a7aaeec67d672e8d724adc4ec1231 data/monophobia/loot_table/blocks/invasive_brick_slab.json
@@ -16,5 +16,13 @@ bdea7af01a223bfa80a125f4a19bd75a75dcafd4 data/monophobia/loot_table/blocks/invas
 f9183c2d97669fc584a915418cca90457705d873 data/monophobia/loot_table/blocks/opaque_block.json
 49d0bbe07cb7887ee4ebfd8d6356cbde3ecf9d92 data/monophobia/loot_table/blocks/opaque_ore.json
 9ad5160f2805cc1deb312d9efc3d02610f49cbff data/monophobia/loot_table/blocks/raw_opaque_block.json
+5227f38cd2b84deb5e5254e8882306dc2ff06d4e data/monophobia/loot_table/blocks/secluded_grass_block.json
+0c2f52f1d6f6eb7eec903171ceea1c274eaa033f data/monophobia/loot_table/blocks/secluded_leaves.json
+7a0b49bb4222aaa5ae13216094c8e757941e6f20 data/monophobia/loot_table/blocks/secluded_log.json
+30bb22e12ab9114ee32458dee87a881aac6b8cb2 data/monophobia/loot_table/blocks/secluded_planks.json
+a2872ea004122eaee70fc1f2c94ff094d220ba0f data/monophobia/loot_table/blocks/secluded_sapling.json
+5133ee78a5d220237de282c7f2ad768c40cf9531 data/monophobia/loot_table/blocks/secluded_wood.json
 6278350c315a72eaed126958c777d9f7495c34ae data/monophobia/loot_table/blocks/solidified_invasive_stone.json
 c32c00eaabcb66c2be16d4b3c522dd1e3c4428c9 data/monophobia/loot_table/blocks/solidified_invasive_stone_slab.json
+dc60e5e0cd70b9dceb176305087b491577ea1c22 data/monophobia/loot_table/blocks/stripped_secluded_log.json
+6f41a9b5e6278fcebbcef725370caedb16ea94a1 data/monophobia/loot_table/blocks/stripped_secluded_wood.json
